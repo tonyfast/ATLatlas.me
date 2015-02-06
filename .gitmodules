@@ -1,0 +1,3 @@
+[submodule "tablejs"]
+	path = tablejs
+	url = https://gist.github.com/tonyfast/cdbfed274b8acae60007
