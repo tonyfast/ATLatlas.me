@@ -1,3 +1,5 @@
+---
+---
 function CreateTable( data ){
 // make simple table in jquery
 var rows = data.split('\n');
