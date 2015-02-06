@@ -1,5 +1,5 @@
 #Change this to the name of your repo 
-baseurl: '/mrhyde' 
+baseurl: '/hulkout' 
 
 markdown: kramdown
 highlighter: pygments
