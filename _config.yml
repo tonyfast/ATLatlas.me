@@ -1,5 +1,5 @@
 #Change this to the name of your repo 
-baseurl: '/hulkout' 
+baseurl: '/ATLatlas.me' 
 
 markdown: kramdown
 highlighter: pygments

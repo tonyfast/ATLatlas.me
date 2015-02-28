@@ -1,40 +1,279 @@
----
-# Keep this to activate jekyll liquid templates for url names
----
-<div class="content-list"></div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml">
 
-<script src="//cdn.jsdelivr.net/g/d3js,zepto"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Spalding County - Unemployment Rate</title>
+  <!--<link type="text/css" rel="stylesheet" media="all" href="http://i2.cdn.turner.com/dr/pga/modules/node/node.css?2" />
+<script type="text/javascript" src="/sites/default/libraries/cvp/js/cvp-main.js?2"></script>-->
+<meta property="og:image" content="images/unemployment-rate-legend.png">
+        <link rel="stylesheet" type="text/css" media="all" href="http://atlantaequityatlas.com/wp-content/themes/maea/style.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+    var disqus_developer = 1; // this would set it to developer mode
+    var disqus_url = 'http://example.com';
 
-<!-- Load the scrape site variables
-they are in _content/site.json
 
-Use this file to scrape important strings from the Jekyll
-API and pass them to javascript variables you can use later.
--->
 
-<script src="{{site.baseurl}}/cards/js/site.js"></script>
-<script src="{{site.baseurl}}/cards/js/table.js"></script>
+jQuery(document).ready(function($) {
 
-<script>
-  // Display some of the information
-  // Scale from the scraped Jekyll data
-  ;( function(){
-    
-    d3.select('.content-list')
-      .selectAll('li')
-        .data( cards )
-        .call( function(s){
-           s.enter()
-            .append('li')
-            .each( function(d){
-              d3.select(this)
-                .append('a')
-                .attr('href', function(d){if(d){return  d['url'];};})
-                .text(function(d){if(d){return d['title'].length > 0 ? d['title'] : d['url'];};});                    
-            }); // each
-        }); // call
-    
-    // Create that table
-    $.get( '/hulkout/cards/movies.csv', CreateTable );
-  })(); // iife
+  $(".map-action").hover(
+    function() {
+      $( this ).css({"bottom":"0"});
+    }, function() {
+      $( this ).css({"bottom":"-247px"});
+    }
+  );
+
+})
 </script>
+  
+<style>
+body {
+	margin:0;
+}
+
+.page-wrapper {
+	padding:50px;
+	background:#fff;
+}
+
+h1,
+h3 {
+	padding:0px 30px 10px 30px;
+	text-align: center;
+}
+h2 {
+	margin-bottom:30px;
+}
+.row {
+	margin-bottom:0;
+}
+
+li {
+	color:#000;
+	margin-left:15px;
+}
+
+.map-legend {
+	position: absolute;
+top: 380px;
+border-radius: 10px;
+right: 20px;
+width:30%;
+padding:20px;
+background:#fff;
+}
+input,textarea {
+float: left;
+width: 100%;
+}
+.map-legend img {
+	width:100%;
+}
+.map-action {
+	position: fixed;
+border-radius: 10px 10px 0 10px;
+bottom: -247px;
+right: 20px;
+width:30%;
+background:#ccc;
+color:#333;
+padding:10px 20px;
+z-index: 99999999;
+}
+.map-action span {
+	color:#333;
+	font-size:18px;
+}
+
+.share-this {
+	float:right;
+	width:30%;
+	padding:0 30px;
+}
+
+.discuss {
+	margin-top:50px;
+}
+
+.discuss span {
+width: 100%;
+color: #000;
+float: left;
+}
+.custom-atlas h3 {
+	float:left;
+	width:30%;
+	background:gray;
+	color:#ccc;
+	padding:10px 0;
+	margin:0;
+	font-size:80%;
+}
+.custom-atlas h3.arrow {
+	width:5% !important;
+	color:#fff !important;
+}
+.custom-atlas h3.last {
+	width:30%;
+}
+.custom-atlas h3.active {
+background: #35b8e1;
+color: #fff;
+}
+header {
+	border:0 !important;
+}
+/*.map-action h4 {
+	font-size:100%;
+}*/
+.breadcrumbs {
+	color:#ccc;
+	text-align: center;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+.map-action h4 {
+	display:none;
+}
+}
+</style>
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "a61794d4-40bb-4f5b-9b5e-b22d39d20b55", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+
+</head>
+<body class="custom-atlas">
+
+<header class="page">
+            <div class="row">
+                <nav class="utility">
+                    <ul id="utility_nav" class="utility-menu"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://atlantaequityatlas.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="http://atlantaequityatlas.com/request-training/">Request Training</a></li>
+</ul>                </nav>
+                <nav class="main-nav">
+                    <a href="#" class="mobile-menu">Menu</a>
+                    <ul id="main_nav" class="header-menu"><li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="http://atlantaequityatlas.com/about-maea/">About MAEA</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-maea_map_categories current-maea_map-ancestor menu-item-47"><a href="http://atlantaequityatlas.com/maps/browse-maps/">Browse Maps</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://atlantaequityatlas.com/how-to-use-the-maps/">How to Use the Maps</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://atlantaequityatlas.com/get-the-report/">Get the Report</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-19"><a href="http://atlantaequityatlas.com/maea-news/">MAEA News</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="http://atlantaequityatlas.com/data-resources/">Data Resources</a></li>
+</ul>                </nav>
+                <h2 class="logo-header"><a href="/">Metro Atlanta Equity Atlas</a></h2>
+            </div>
+
+            <div class="breadcrumbs"><a>Home</a> &raquo; <a>Browse Maps</a> &raquo; <a>Counties</a> &raquo; Spalding County</div>
+      <h1>Spalding County</h1>
+                    </header>
+
+<div id="problem-tabs">
+
+
+      <h3 class="arrow"><a>&#171;</a></h3>
+      <h3>Education</h3>
+      <h3 class="active selected">Unemployment Rate</h3>
+      <h3 class="last">Public Safety</h3>
+      <h3 class="arrow"><a>&#187;</a></h3>
+
+      
+      
+
+</div>
+
+<div class="map">
+
+<div class="map-legend">
+<img src="images/unemployment-rate-legend.png">
+</div>
+<div class="map-action">
+	<h4>Make your voice be heard!</h4>
+
+	<img src="images/spalding-county.png" align="right" width="20%"/>
+	<!-- Add google analytics -->
+	<span>Contact Local Politician:<br/>
+		<strong id="politician-1">Bob Wilkerson</strong><br/>
+		<!--<strong id="politician-2">Bob Wilkerson</strong>-->
+	</span><br/>
+
+	<form class="user-info-from-cookie contact-form" action="/" method="post" id="contact-site-form" accept-charset="UTF-8"><div class="form-item form-type-textfield form-item-name">
+  <label class="met_color" for="edit-name">Your name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" class="met_input_text met_no_input_margin form-text required" id="edit-name" name="name" value="" size="60" maxlength="255" />
+</div>
+<div class="form-item form-type-textarea form-item-message">
+  <label class="met_color" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
+ <div class="resizable"><textarea class="met_full_input met_input_text met_textarea form-textarea required" id="edit-message" name="message" cols="60" rows="5"></textarea></div><input type="submit" class="btn btn-primary btn-sm form-submit" id="edit-submit--3" name="op" value="Send message" />
+</div>
+</div><div class="form-actions form-wrapper" id="edit-actions--3"></div>
+</form>
+
+
+</div>
+
+<img src="images/spalding-county.png" width="100%" height="40%">
+      
+      
+
+</div>
+
+
+<div class="page-wrapper">
+
+	<div class="share-this">
+	<h4>Share</h4>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_email_large' displayText='Email'></span>
+	</div>
+
+	<div class="effects">
+	<h2>How this effects you</h2>
+
+	<ul>
+		<li><a href="">Job centers in your neighborhood</a></li>
+		<li><a href="">Volunteer/training opportunities</a></li>
+		<li><a href="">Recent crime in your neighborhood</a></li>
+	</ul>
+	</div>
+
+<div class="discuss">
+<div id="disqus_thread"></div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'southernequitsyatlastest';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+
+
+
+
+    var jqxhr = $.getJSON( "https://www.googleapis.com/civicinfo/v2/representatives?address=Griffin%2C+GA+30223&includeOffices=true&levels=administrativeArea1&key=AIzaSyAG7HdcnfFtXh1mMs4lIEQe3uqDvfxtx6Y", function(data) {
+    	console.log(data);
+	})
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+
+
+</body>
+</html>
